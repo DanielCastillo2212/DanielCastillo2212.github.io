@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candy Garden Crochet</title>
+    <!-- Enlace a Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Estilos Personalizados -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Colores Personalizados */
+        :root {
+            --primary-color: #8A2BE2; /* Lila */
+            --secondary-color: #32CD32; /* Verde */
+        }
+        /* Cambiar el color del botón de Bootstrap */
+        .btn-primary {
+            background-color: var(--primary-color);
+            border-color: var(--primary-color);
+        }
+        .btn-primary:hover {
+            background-color: #6A1B9A; /* Lila más oscuro */
+            border-color: #6A1B9A;
+        }
+        /* Estilos del Logo */
+        .logo {
+            max-width: 250px; /* Ajusta el tamaño del logo según sea necesario */
+        }
+        /* Estilos para las tarjetas de productos */
+        .card {
+            margin-bottom: 20px; /* Espacio entre las tarjetas */
+            border-radius: 35px; /* Redondear las esquinas */
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Efecto de relieve 3D */
+            transition: box-shadow 0.3s ease; /* Transición suave */
+        }
+
+        .card:hover {
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2); /* Efecto de relieve más pronunciado al pasar el mouse */
+        }
+        /* Ajustar tamaño de las imágenes dentro de las tarjetas */
+        .card-img-top {
+            height: 600px; /* Altura fija para todas las imágenes */
+            object-fit: cover; /* Ajuste para cubrir el área disponible */
+        }
+        .card:hover img {
+            transform: scale(1.01); /* Hacer que la imagen se agrande ligeramente al pasar el mouse */
+        }
+    </style>
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img src="LogoCG.png" alt="Candy Garden Crochet Logo" class="logo">
+                </a>
+                <!-- Botón del Navbar para pantallas pequeñas -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Enlaces del Navbar -->
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="#">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Catálogo</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Carrito</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+<section class="hero">
+    <div class="container text-center">
+        <h1 >Bienvenido a Candy Garden Crochet</h1>
+        <p style="margin-bottom: 40px;">Encuentra los amigurumis más adorables y creativos para ti o para regalar.</p>
+        <a href="#" class="btn btn-primary">Explora Nuestro Catálogo</a>
+    </div>
+</section>
+
+    <!-- Contenedor para centrar la imagen de las nubes -->
+    <div class="container text-center">
+        
+       
+    </div>
+
+    <!-- Sección de Productos Destacados -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 style="margin-top: 40px; margin-bottom: 20px;" class="text-center">Productos Destacados</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="amigurumi1.png" class="card-img-top" alt="Amigurumi 1">
+                        <div class="card-body">
+                            <h5 class="card-title">Amigurumi 1</h5>
+                            <p class="card-text">Precio: $XX.XX</p>
+                            <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="amigurumi2.png" class="card-img-top" alt="Amigurumi 2">
+                        <div class="card-body">
+                            <h5 class="card-title">Amigurumi 2</h5>
+                            <p class="card-text">Precio: $XX.XX</p>
+                            <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <img src="amigurumi4.png" class="card-img-top" alt="Amigurumi 3">
+                        <div class="card-body">
+                            <h5 class="card-title">Amigurumi 3</h5>
+                            <p class="card-text">Precio: $XX.XX</p>
+                            <a href="#" class="btn btn-primary">Agregar al Carrito</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Repetir para más productos destacados -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+<footer class="footer mt-5 py-4" style="background-image: url('footer.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+    <div class="container">
+         <!-- Franja decorativa -->
+         <div class="row mb-3">
+            <div class="col-md-12">
+                <hr class="border-top border-lila"> <!-- Cambio aquí: border-lila -->
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <h4>Contacto</h4>
+                <p>¡Estamos aquí para ayudarte! Si tienes alguna pregunta o comentario, no dudes en ponerte en contacto con nosotros.</p>
+                <ul class="list-unstyled">
+                    <li><strong>Teléfono:</strong> +1234567890</li>
+                    <li><strong>Correo electrónico:</strong> info@candygardencrochet.com</li>
+                </ul>
+            </div>
+            <div class="col-md-6">
+                <h4>Redes Sociales</h4>
+                <ul class="list-unstyled">
+                    <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="#"><i class="fab fa-pinterest"></i> Pinterest</a></li>
+                    <!-- Agrega más redes sociales si es necesario -->
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>&copy; 2024 Candy Garden Crochet - Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Enlace a Bootstrap JS (Opcional, solo si necesitas funcionalidades como el desplazamiento suave) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
